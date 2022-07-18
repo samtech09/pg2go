@@ -1,6 +1,10 @@
 [pg2go] is a [PostgreSQL] script that generates [Go] struct definitions for all
 tables in a database.
 
+Note: Now column comments will also be included with struct fields.
+
+ToDo: Adding table comments just before struct definition.
+
 It is designed to be run directly against a database using the official `psql` command, and the output of that redirected to a new `.go` source file.
 
 Here is an example Unix shell session demonstrating this (it interacts with a hypothetical database called `blogdb`):
