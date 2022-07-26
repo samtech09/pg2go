@@ -55,7 +55,7 @@ CREATE FUNCTION type_pg2go(typ text, nullable boolean) RETURNS text AS $$
       END
     ELSE
       CASE typ
-        WHEN 'bigint'           THEN 'int'
+        WHEN 'bigint'           THEN 'int64'
         WHEN 'boolean'          THEN 'bool'
         WHEN 'double precision' THEN 'float64'
         WHEN 'integer'          THEN 'int'
